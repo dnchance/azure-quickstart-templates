@@ -119,6 +119,7 @@
                 "platformUpdateDomainCount": 2
             }
         },
+        
         {
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "2018-10-01",
@@ -147,6 +148,16 @@
                 "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]",
                 "[concat('Microsoft.Compute/availabilitySets/', variables('asetName'))]"
             ],
+            "resources": [{
+                     "type": "Microsoft.Compute/virtualMachines/providers/locks",
+                     "name": "[concat(variables('vmName'), '/Microsoft.Authorization/','VirtualMachine')]",
+                     "apiVersion": "2015-01-01",
+                     "dependsOn": [ "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]" ],
+                     "properties": {
+                     "level": "CannotDelete",
+                     "notes": "Default Do Not Delete Lock"
+                     }
+             }]
             "properties": {
                 "availabilitySet": {
                     "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('asetName'))]"
