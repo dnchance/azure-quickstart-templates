@@ -91,7 +91,7 @@
         "ubuntuOSVersion": "14.04.2-LTS",
         "asetName": "[concat('az',parameters('locationCode'),'netwias',parameters('envCode'))]",
         "nicName": "[concat(variables('vmName'),'nic')]",
-        "artifactsBaseUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/301-dns-forwarder",
+        "artifactsBaseUrl": "https://raw.githubusercontent.com/dnchance/azure-quickstart-templates/master/301-dns-forwarder",
         "scriptUrl": "[concat(variables('artifactsBaseUrl'),'/','forwarderSetup.sh')]",
         "linuxConfiguration": {
             "disablePasswordAuthentication": true,
