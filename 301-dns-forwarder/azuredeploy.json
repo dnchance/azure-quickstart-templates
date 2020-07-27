@@ -182,7 +182,7 @@
                      "level": "CannotDelete",
                      "notes": "Default Do Not Delete Lock"
                      }
-             }]
+             }],
             "properties": {
                 "availabilitySet": {
                     "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('asetName'))]"
