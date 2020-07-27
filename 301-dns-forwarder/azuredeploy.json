@@ -81,14 +81,12 @@
         "resourceTags": {
         "type": "object",
         "defaultValue": {
-            "_Environment":"$(envCode)",
+            "_Environment":"$('envCode')",
             "_Location":"SC - South Central US",
-            "_Product":"NETW - Network Resource",
-            "_CostCenter":"8423",
             "_Team":"Infrastructure Engineering",
-            "CreatedBy":"$(createdByUser)",
-            "createdDate":"$(createdDate)"
-        }
+            "_CostCenter":"8423",
+            "_Product":"NETW - Network Resource",
+         }
     }
     },
     "variables": {
