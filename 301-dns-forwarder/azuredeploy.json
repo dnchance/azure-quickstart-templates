@@ -34,7 +34,7 @@
         },
 
         "locationCode":{
-            "defaultValue": "",
+            "defaultValue": "sc",
             "type": "string",
             "allowedValues": [
                 "sc",
@@ -86,7 +86,7 @@
             "_Team":"Infrastructure Engineering",
             "_CostCenter":"8423",
             "_Product":"NETW - Network Resource"
-         }
+        }
     }
     },
     "variables": {
