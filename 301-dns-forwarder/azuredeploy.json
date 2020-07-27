@@ -111,6 +111,14 @@
             "apiVersion": "2017-12-01",
             "name": "[variables('asetName')]",
             "location": "[variables('location')]",
+            "tags": {
+                "CreatedBy": "t1-dchance@quiktrip.com",
+                "CreatedDate": "2020-07-27 12:50:45 -05:00",
+                "_Product": "DNS Proxy",
+                "_Environment": "DEV - Development",
+                "_CostCenter": "8423",
+                "_Location": "AZSC - South Central US"
+            },
             "sku": {
                 "name": "Aligned"
             },
@@ -125,6 +133,14 @@
             "apiVersion": "2018-10-01",
             "name": "[variables('nicName')]",
             "location": "[variables('location')]",
+            "tags": {
+                "CreatedBy": "t1-dchance@quiktrip.com",
+                "CreatedDate": "2020-07-27 12:50:45 -05:00",
+                "_Product": "DNS Proxy",
+                "_Environment": "DEV - Development",
+                "_CostCenter": "8423",
+                "_Location": "AZSC - South Central US"
+            },
             "properties": {
                 "ipConfigurations": [
                     {
@@ -148,6 +164,15 @@
                 "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]",
                 "[concat('Microsoft.Compute/availabilitySets/', variables('asetName'))]"
             ],
+            "tags": {
+                "OSVer": "[variables('ubuntuOsVersion')]",
+                "CreatedBy": "t1-dchance@quiktrip.com",
+                "CreatedDate": "2020-07-27 12:50:45 -05:00",
+                "_Product": "DNS Proxy",
+                "_Environment": "DEV - Development",
+                "_CostCenter": "8423",
+                "_Location": "AZSC - South Central US"
+            },
             "resources": [{
                      "type": "Microsoft.Compute/virtualMachines/providers/locks",
                      "name": "[concat(variables('vmName'), '/Microsoft.Authorization/','VirtualMachine')]",
