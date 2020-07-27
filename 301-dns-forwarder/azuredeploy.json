@@ -88,7 +88,7 @@
         "vmname": "[concat('az',parameters('locationCode'),'netwdnsi',parameters('enumeration'),parameters('envCode'))]",
         "vnetAddressPrefix": "10.0.0.0/8",
         "vmSize": "Standard_A1_v2",
-        "ubuntuOSVersion": "18.04.4-LTS",
+        "ubuntuOSVersion": "18.04-LTS",
         "asetName": "[concat('az',parameters('locationCode'),'netwias',parameters('envCode'))]",
         "nicName": "[concat(variables('vmName'),'nic')]",
         "artifactsBaseUrl": "https://raw.githubusercontent.com/dnchance/azure-quickstart-templates/master/301-dns-forwarder",
